@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to todo App</title>
+    <link rel="stylesheet" href="style.css">
+    
+        
+           
+
+       
+   
+</head>
+<body>
+
+  
+    <div class="container">
+      
+        <!-- <h4>Website todo</h4> -->
+        <div class="heading">
+          <h4>Website todo</h4>
+        </div>
+   
+        <div>
+
+          <input type="radio" id="1" name="drone" value="Styleguide creation"
+                 checked>
+          <label for="1">Styleguide creation</label>
+        </div>
+    
+        <div>
+          <input type="radio" id="2" name="drone" value="Send wireframes">
+          <label for="2">Send wireframes</label>
+        </div>
+    
+        <div>
+          <input type="radio" id="3" name="drone" value="Readability About page">
+          <label for="3">Readability About page</label>
+        </div>
+        <div>
+            <input type="radio" id="4" name="drone" value="Check color contrast">
+            <label for="4">Check color contrast</label>
+          </div>
+   
+    </div>
+    <div class="text-center">
+      <button type="button" class="block magenta margin-auto" id="addtaskbtn"> + New Task</button>
+    </div>
+    <div class="inputarea">
+      <input type="text" name="" placeholder="Write your Todo" id="todoinput">
+      <!-- ye input box hai jisme todo likhenge ok?ok -->
+      <!-- now adding a button for user so they can  save todo -->
+      <button type="button" id="savetodobtn" onclick="UserInput()">Save</button>
+    </div>
+    
+   <script src="./javascript.js"></script> 
+</body>
+</html>
