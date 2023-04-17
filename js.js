@@ -11,7 +11,7 @@ function Todosaver(todo, Saar) {
   if (existingtodo == null) {
     existingtodo = [];
   }
-  existingtodo.push({todo : todo, Discription : Discription});
+  existingtodo.push({todo : todo, Saar : Saar});
   localStorage.setItem("Todos", JSON.stringify(existingtodo));
   reloader();
   inputbox.value = "";
@@ -20,7 +20,7 @@ function Todosaver(todo, Saar) {
 function reloader() {
   let existingtodo = JSON.parse(localStorage.getItem("Todos"));
   Todos.innerHTML = "";
-  for (todo of existingtodo) { 
+  for (todo in existingtodo) { 
   // console.log(existingtodo[todo])
     
     Todos.innerHTML += `<div class="list">
